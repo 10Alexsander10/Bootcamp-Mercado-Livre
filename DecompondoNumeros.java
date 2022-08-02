@@ -19,11 +19,14 @@ public class DecompondoNumeros{
                 numSeparado.add(Integer.parseInt(c));
              
                 if(numSeparado.get(index) <= md){
-                    Integer d = numSeparado.get(index); 
-                    soma += d;  
+                     
+                    soma += numSeparado.get(index);
+                }
+                else{
+                    soma -= 1;
                 }
             }
-            if(soma == 21 && numSeparado.size()==4){
+            if(soma == 21 ){
                 listaDeNumeros.add(i);
             }
         }
